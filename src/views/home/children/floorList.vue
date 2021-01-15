@@ -1,27 +1,16 @@
 <template>
   <div class="floorList">
     <h2>{{ title }}</h2>
-    <Swiper>
-      <div>111</div>
-    </Swiper>
   </div>
 </template>
 
 <script>
-import Swiper from "../../../components/swiper";
 
 export default {
   name: "floorList",
 
   props: {
     title: String,
-    floorList: {
-      type: Array,
-      default: () => [],
-    },
-  },
-  components: {
-    Swiper,
   },
 };
 </script>
