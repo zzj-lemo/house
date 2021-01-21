@@ -5,7 +5,7 @@
       <div class="name">{{ list.name }}</div>
       <div class="price">{{ list.price }}</div>
       <div class="address">{{ list.address + "/建面" + list.area }}</div>
-      <div class="time">{{ list.time }}开盘</div>
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -33,6 +33,8 @@ export default {
 
   img {
     margin-right: 0.2rem;
+    width: 1.5rem;
+    height: 1rem;
   }
   .content {
     div {

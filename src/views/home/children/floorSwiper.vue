@@ -3,7 +3,9 @@
     <h2>{{ title }}</h2>
     <swiper :options="swiperOption" ref="mySwiper" v-if="floorSwiper.length">
       <swiper-slide v-for="(item,index) in floorSwiper" :key="index">
-        <List :list="item"></List>
+        <List :list="item">
+          <div class="time">{{ item.time }}开盘</div>
+        </List>
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
@@ -14,11 +16,10 @@
 // 引入插件
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 import "swiper/dist/css/swiper.css";
-import list from "../../../components/list";
 import List from '../../../components/list.vue';
 
 export default {
-  name: "floorSwiper",
+  name: "FloorSwiper",
 
   props: {
     title: String,
@@ -84,7 +85,7 @@ export default {
     width: 100%;
     .swiper-slide {
       width: 100%;
-      padding-bottom: .5rem;
+      padding-bottom: .3rem;
     }
   }
 }

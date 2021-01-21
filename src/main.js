@@ -3,10 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import VueI18n from 'vue-i18n'
+import { Button,Icon,TreeSelect,DropdownMenu, DropdownItem,RadioGroup, Radio, Slider,Search   } from 'vant';
 
 require('./mock/mock')
 
-Vue.use(VueI18n);
+Vue.use(VueI18n).use(Button).use(Icon).use(TreeSelect).use(DropdownMenu).use(DropdownItem).use(RadioGroup).use(Radio).use(Slider).use(Search);
 
 const i18n = new VueI18n({
     locale: 'chs', // 将要切换的语言，可以通过url拼的参数获取，用户行为select选择获取，本地manifest配置获取等，根据场景动态获取

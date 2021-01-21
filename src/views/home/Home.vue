@@ -2,22 +2,22 @@
   <div id="home">
     <RecommendView :recommends="recommends"></RecommendView>
 
-    <floor-swiper :title="$t('home.hot')" :floorSwiper="hotList"></floor-swiper>
+    <Floor-swiper :title="$t('home.hot')" :floorSwiper="hotList"></Floor-swiper>
 
-    <floor-swiper :title="$t('home.soon')" :floorSwiper="soonList"></floor-swiper>
+    <Floor-swiper :title="$t('home.soon')" :floorSwiper="soonList"></Floor-swiper>
   </div>
 </template>
 
 <script>
 import RecommendView from "./children/RecommendView";
-import floorSwiper from "./children/floorSwiper.vue";
+import FloorSwiper from "./children/FloorSwiper";
 import { getResource, getfloorSwiper } from "../../network/home";
 
 export default {
   name: "Home",
   components: {
     RecommendView,
-    floorSwiper,
+    FloorSwiper,
   },
   data(){
     return {

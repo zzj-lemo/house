@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     goList() {
-      this.$router.push('/info');
+      this.$router.push('/floorList');
     }
   }
 };
@@ -46,21 +46,8 @@ export default {
 
       .title {
         font-size: .14rem;
-        color: #fff;
         margin-top: .04rem;
       }
     }
-  }
-  .recommend .content:nth-child(4n+1) {
-    background-color: #39C48B;
-  }
-  .recommend .content:nth-child(4n+2) {
-    background-color: #098CFD;
-  }
-  .recommend .content:nth-child(4n+3) {
-    background-color: #FD6D09;
-  }
-  .recommend .content:nth-child(4n+4) {
-    background-color: #FDCC09;
   }
 </style>

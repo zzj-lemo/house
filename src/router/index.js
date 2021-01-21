@@ -9,6 +9,7 @@ const Info = () => import(/* webpackChunkName: "Info" */ "../views/info/Info.vue
 const News = () => import(/* webpackChunkName: "News" */ "../views/news/News.vue");
 const Collection = () => import(/* webpackChunkName: "Collection" */ "../views/collection/Collection.vue");
 const My = () => import(/* webpackChunkName: "My" */ "../views/my/My.vue");
+const FloorList = () => import(/* webpackChunkName: "floorList" */ "../views/floorList/FloorList.vue");
 const routes = [
   {
     path: '/',
@@ -43,6 +44,10 @@ const routes = [
   {
     path: "/my",
     component: My,
+  },
+  {
+    path: "/floorList",
+    component: FloorList,
   },
 ]
 
