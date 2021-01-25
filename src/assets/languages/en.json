@@ -2,5 +2,13 @@
     "home": {
       "hot": "Hot Property",
       "soon": "opening quotation"
+    },
+    "head_footer": {
+      "return": "return",
+      "collection": "collection",
+      "share": "share",
+      "on-line": "Online consultation",
+      "appointment": "make an appointment",
+      "phone": "Telephone consultation"
     }
   }

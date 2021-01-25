@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     goList() {
-      this.$router.push("/info");
+      this.$router.push("/floorDetails");
     },
   },
 };

@@ -2,5 +2,13 @@
     "home": {
       "hot": "热门楼盘",
       "soon": "即将开盘"
+    },
+    "head_footer": {
+      "return": "返回",
+      "collection": "收藏",
+      "share": "分享",
+      "online": "在线咨询",
+      "appointment": "预约",
+      "phone": "电话咨询"
     }
   }
