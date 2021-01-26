@@ -39,7 +39,7 @@ export default {
 <style lang="scss" scoped>
 .floorList {
     padding: 0.1rem;
-    // padding-top: 0.64rem;s
+    // padding-top: 0.64rem;
     .list{
         margin-bottom: 0.1rem;
     }

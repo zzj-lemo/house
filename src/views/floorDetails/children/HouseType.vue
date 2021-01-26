@@ -1,6 +1,6 @@
 <template>
   <div class="house_type">
-    <div class="list" v-for="(item, index) in houseTypeList" :key="index">
+    <div class="list" v-for="(item, index) in houseTypeList" :key="index" @click="goHouseDetails()">
       <img :src="item.image" alt="户型图" />
       <div class="area">{{ item.houseType + "  " + item.area }}</div>
       <div>{{ item.price }}</div>
@@ -18,6 +18,11 @@ export default {
       default: () => [],
     },
   },
+  methods: {
+    goHouseDetails() {
+      this.$router.push("/houseDetails");
+    }
+  }
 };
 </script>
 

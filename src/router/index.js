@@ -11,6 +11,7 @@ const Collection = () => import(/* webpackChunkName: "Collection" */ "../views/c
 const My = () => import(/* webpackChunkName: "My" */ "../views/my/My.vue");
 const FloorList = () => import(/* webpackChunkName: "floorList" */ "../views/floorList/FloorList.vue");
 const FloorDetails = () => import(/* webpackChunkName: "floorDetails" */ "../views/floorDetails/FloorDetails.vue");
+const HouseDetails = () => import(/* webpackChunkName: "HouseDetails" */ "../views/houseDetails/HouseDetails.vue");
 
 const routes = [
   {
@@ -54,6 +55,10 @@ const routes = [
   {
     path: "/floorDetails",
     component: FloorDetails,
+  },
+  {
+    path: "/houseDetails",
+    component: HouseDetails,
   },
 ]
 

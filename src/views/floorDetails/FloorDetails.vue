@@ -54,7 +54,7 @@ export default {
   name: "FloorDetail",
   data() {
     return {
-      scrollFlag: false,
+      scrollFlag: true,
       floorDetail: {},
       houseTypeList: [],
       floorDynamic: [],
@@ -102,7 +102,7 @@ export default {
         document.documentElement.scrollTop ||
         document.body.scrollTop;
       // console.log(scrollTop);
-      if (scrollTop >= 200) {
+      if (scrollTop < 200) {
         _this.scrollFlag = true;
       } else {
         _this.scrollFlag = false;
@@ -114,12 +114,12 @@ export default {
 
 <style lang="scss">
 .navActive {
-  background-color: #fff;
+  background-color: transparent !important;
   .return {
-    color: #000 !important;
+    color: #fff !important;
   }
   .right span {
-    color: #000 !important;
+    color: #fff !important;
   }
 }
 </style>

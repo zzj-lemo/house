@@ -29,13 +29,14 @@ export default {
   z-index: 2;
   justify-content: space-between;
   padding: 0.1rem;
+  background-color: #fff;
 
   .return {
     width: 0.6rem;
     height: 0.3rem;
     line-height: 0.3rem;
     border-radius: 0.06rem;
-    color: rgba(255, 255, 255, 100);
+    color: #111;
     font-size: 0.14rem;
     text-align: center;
     border: 1px solid rgba(187, 187, 187, 100);

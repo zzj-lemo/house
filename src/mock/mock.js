@@ -83,3 +83,31 @@ const getFloorDynamic = () => {
   return resources;
 };
 Mock.mock("http://mockjs.com/getFloorDynamic", "get", getFloorDynamic());
+
+const getHouseDetails = () => {
+  let resources = {
+    name: "A户型",
+    address: Random.city(true),
+    area: "100㎡",
+    price: "约260万/套",
+    houseType: "住宅",
+    direction: "南，北",
+    image: Random.dataImage("375x400", "户型图"),
+  };
+  return resources;
+};
+Mock.mock("http://mockjs.com/getHouseDetails", "get", getHouseDetails());
+
+const getRealShot = () => {
+  let resources = [];
+  for (let i = 0; i < 3; i++) {
+    resources.push({
+      image: Random.dataImage("100x70", "实拍图"),
+      title: Random.cparagraph(1),
+      icon: Random.dataImage("20x20", "头像"),
+      name: Random.cname(),
+    });
+  }
+  return resources;
+};
+Mock.mock("http://mockjs.com/getRealShot", "get", getRealShot());

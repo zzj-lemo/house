@@ -25,6 +25,7 @@ export default {
   bottom: 0;
   align-items: flex-end;
   padding: 0.2rem;
+  background-color: #fff;
 
   .left {
     width: 1.23rem;
