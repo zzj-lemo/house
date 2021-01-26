@@ -17,3 +17,15 @@ export function getFloorDynamic() {
     url:'/getFloorDynamic'
   });
 }
+
+export function getCollection() {
+  return request({
+    url:'/getCollection'
+  });
+}
+
+export function getPriceComparison() {
+  return request({
+    url:'/getPriceComparison'
+  });
+}

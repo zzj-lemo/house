@@ -4,8 +4,8 @@
       {{ $t("head_footer.return") }}
     </div>
     <div class="right">
-      <span class="collection">{{ $t("head_footer.collection") }}</span>
-      <span class="share">{{ $t("head_footer.share") }}</span>
+      <span class="collection" @click="goCollection()">{{ $t("head_footer.collection") }}</span>
+      <span class="share" @click="goShare()">{{ $t("head_footer.share") }}</span>
     </div>
   </div>
 </template>
@@ -16,6 +16,12 @@ export default {
   methods: {
     returnLevel() {
       this.$router.go(-1);
+    },
+    goCollection() {
+      this.$router.push("/collection");
+    },
+    goShare() {
+      this.$router.push("/share");
     },
   },
 };

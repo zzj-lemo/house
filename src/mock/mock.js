@@ -111,3 +111,35 @@ const getRealShot = () => {
   return resources;
 };
 Mock.mock("http://mockjs.com/getRealShot", "get", getRealShot());
+
+const getCollection = () => {
+  let resources = [];
+  for (let i = 0; i < 5; i++) {
+    resources.push({
+      "id|+1": 0,
+      "type|1": ["floor", "house"],
+      name: Random.cword(4, 8),
+      image: Random.dataImage("150x100"),
+      price: "388万元/套起",
+    });
+  }
+  return resources;
+};
+Mock.mock("http://mockjs.com/getCollection", "get", getCollection());
+
+const getPriceComparison = () => {
+  let resources = [];
+  for (let i = 0; i < 2; i++) {
+    resources.push({
+      image: Random.dataImage("100x100","户型图"),
+      "houseType|1": ["A户型", "C户型"],
+      type: "住宅",
+      "price|1": ["约260万/套", "约660万/套"],
+      "area|1": ["100㎡","150㎡"],
+      direction: "南，北",
+      address: "北京。。。",
+    });
+  }
+  return resources;
+};
+Mock.mock("http://mockjs.com/getPriceComparison", "get", getPriceComparison());

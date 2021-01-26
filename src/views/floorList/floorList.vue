@@ -2,7 +2,7 @@
   <div class="floorList">
     <van-search v-model="value" placeholder="请输入搜索关键词" />
     <div v-for="(item, index) in floorList" :key="index">
-      <List :list="item"></List>
+      <list :list="item"></list>
     </div>
   </div>
 </template>

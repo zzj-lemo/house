@@ -11,8 +11,8 @@
       <div class="price">
         <span class="left">{{ floorDetail.price }}</span>
         <div class="right">
-          <span class="contrast">比价</span>
-          <span class="forward">转</span>
+          <span class="contrast"  @click="goPriceComparison()">比价</span>
+          <span class="forward"  @click="goToIntroduce()">转</span>
         </div>
       </div>
       <div class="title">
@@ -107,6 +107,12 @@ export default {
       } else {
         _this.scrollFlag = false;
       }
+    },
+    goPriceComparison() {
+      this.$router.push("/priceComparison");
+    },
+    goToIntroduce() {
+      this.$router.push("/toIntroduce");
     },
   },
 };

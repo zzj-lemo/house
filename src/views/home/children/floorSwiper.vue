@@ -3,9 +3,9 @@
     <h2>{{ title }}</h2>
     <van-swipe class="my-swipe" autoplay="false" indicator-color="#333">
       <van-swipe-item v-for="(item, index) in floorSwiper" :key="index">
-        <List :list="item">
+        <list :list="item">
           <div class="time">{{ item.time }}开盘</div>
-        </List>
+        </list>
       </van-swipe-item>
     </van-swipe>
   </div>

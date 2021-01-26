@@ -1,25 +1,26 @@
 <template>
   <div id="home">
-    <RecommendView :recommends="recommends"></RecommendView>
+    <recommend-view :recommends="recommends"></recommend-view>
 
-    <Floor-swiper :title="$t('home.hot')" :floorSwiper="hotList"></Floor-swiper>
+    <floor-swiper :title="$t('home.hot')" :floorSwiper="hotList"></floor-swiper>
 
-    <Floor-swiper :title="$t('home.soon')" :floorSwiper="soonList"></Floor-swiper>
+    <floor-swiper :title="$t('home.soon')" :floorSwiper="soonList"></floor-swiper>
   </div>
 </template>
 
 <script>
-import RecommendView from "./children/RecommendView";
-import FloorSwiper from "./children/FloorSwiper";
 import { getResource, getfloorSwiper } from "../../network/home";
+import RecommendView from './children/RecommendView.vue';
+import FloorSwiper from './children/FloorSwiper.vue';
 
 export default {
   name: "Home",
   components: {
     RecommendView,
     FloorSwiper,
+    RecommendView,
   },
-  data(){
+  data() {
     return {
       recommends: [],
       hotList:[],

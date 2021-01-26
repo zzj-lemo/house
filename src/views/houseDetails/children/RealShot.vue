@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "RecommendView",
+  name: "RealShot",
   props: {
     list: {
       type: Array,
