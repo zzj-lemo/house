@@ -17,6 +17,8 @@ import {
   SwipeItem,
   Tab,
   Tabs,
+  Calendar,
+  Cell,
 } from "vant";
 import * as VueGoogleMaps from "vue2-google-maps";
 
@@ -44,7 +46,9 @@ Vue.use(VueI18n)
   .use(Swipe)
   .use(SwipeItem)
   .use(Tab)
-  .use(Tabs);
+  .use(Tabs)
+  .use(Calendar)
+  .use(Cell);
 
 const i18n = new VueI18n({
   locale: "chs", // 将要切换的语言，可以通过url拼的参数获取，用户行为select选择获取，本地manifest配置获取等，根据场景动态获取

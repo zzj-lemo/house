@@ -15,6 +15,7 @@ const HouseDetails = () => import(/* webpackChunkName: "HouseDetails" */ "../vie
 const Share = () => import(/* webpackChunkName: "Share" */ "../views/share/share.vue");
 const PriceComparison = () => import(/* webpackChunkName: "PriceComparison" */ "../views/priceComparison/PriceComparison.vue");
 const ToIntroduce = () => import(/* webpackChunkName: "ToIntroduce" */ "../views/toIntroduce/ToIntroduce.vue");
+const Appointment = () => import(/* webpackChunkName: "Appointment" */ "../views/appointment/Appointment.vue");
 
 const routes = [
   {
@@ -74,6 +75,10 @@ const routes = [
   {
     path: "/toIntroduce",
     component: ToIntroduce,
+  },
+  {
+    path: "/appointment",
+    component: Appointment,
   },
 ]
 

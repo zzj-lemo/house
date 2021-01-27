@@ -2,7 +2,7 @@
   <div class="toIntroduce">
     <floor-head></floor-head>
     <div class="content">
-      <h2>转介绍登记信息(当前用户名）</h2>
+      <h2>看房预约信息</h2>
       <div class="form">
         <div class="form_con">
           <span>名字：</span>
@@ -22,15 +22,8 @@
           <van-calendar v-model="show" @confirm="onConfirm" color="#1989fa" />
         </div>
         <div class="form_con">
-          <span>房源/楼盘</span>
-          <screen></screen>
-        </div>
-        <div class="option">
-          <select>
-            <option>楼盘清单</option>
-            <option>航城壶号</option>
-            <option>华樾国际</option>
-          </select>
+          <span class="margin">房源/楼盘：</span>
+          <input type="text" placeholder="发起预约时，自动选择" />
         </div>
         <button class="submit">确定介绍</button>
         <div class="agree">
@@ -44,7 +37,6 @@
 
 <script>
 import FloorHead from "../../components/head.vue";
-import Screen from "../../components/screen.vue";
 
 export default {
   name: "ToIntroduce",
@@ -57,7 +49,6 @@ export default {
   },
   components: {
     FloorHead,
-    Screen,
   },
   created() {},
   methods: {
@@ -106,17 +97,6 @@ export default {
         }
       }
 
-      .option {
-        text-align: center;
-        select {
-          width: 2.24rem;
-          height: 0.3rem;
-          font-size: 0.14rem;
-          border: 1px solid #bbb;
-          outline: none;
-          border-radius: 0.05rem;
-        }
-      }
       .submit {
         width: 3.15rem;
         height: 0.44rem;

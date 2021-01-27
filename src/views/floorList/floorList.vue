@@ -20,8 +20,8 @@ export default {
     };
   },
   components: {
-    Screen,
-    List
+    // Screen,
+    List,
   },
   created() {
     this.getfloorSwiper();

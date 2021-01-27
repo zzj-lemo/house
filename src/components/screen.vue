@@ -85,24 +85,26 @@
               <label for="house4">多单元</label>
             </div>
           </div>
-          <span>卧室数量</span>
-          <div class="number">
-            <div class="slider">
-              <van-slider
-                v-model="value1"
-                range
-                @change="onChange"
-                :min="0"
-                :max="5"
-              />
-            </div>
-            <div class="num">
-              <span>0</span>
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>4</span>
-              <span>5+</span>
+          <div v-for="(item, index) in roomNum" :key="index" class="room">
+            <span>{{ item }}</span>
+            <div class="number">
+              <div class="slider">
+                <van-slider
+                  v-model="value1"
+                  range
+                  @change="onChange"
+                  :min="0"
+                  :max="5"
+                />
+              </div>
+              <div class="num">
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5+</span>
+              </div>
             </div>
           </div>
         </div>
@@ -118,6 +120,7 @@
 export default {
   data() {
     return {
+      roomNum: ["卧室数量", "卫浴数量", "车位/车库"],
       value: 0,
       radio: "1",
       activeIds: [],
@@ -200,13 +203,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 .filterbar {
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  top: 0;
   width: 100%;
   background-color: #fff;
   height: 0.54rem;
+
+  /deep/.van-dropdown-item__content {
+    max-height: 100%;
+  }
 
   .filterbar-title {
     width: 100%;
@@ -362,16 +365,21 @@ export default {
       line-height: 0.3rem;
     }
   }
-  .number {
+
+  .room {
     width: 100%;
-    .slider {
-      padding: 0.2rem;
+    margin-bottom: 0.2rem;
+    .number {
       width: 100%;
-    }
-    .num {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 0.2rem;
+      .slider {
+        padding: 0.2rem;
+        width: 100%;
+      }
+      .num {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.2rem;
+      }
     }
   }
 }

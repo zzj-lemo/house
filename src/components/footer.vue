@@ -1,7 +1,9 @@
 <template>
   <div class="contact">
     <div class="left">{{ $t("head_footer.online") }}</div>
-    <div class="middle">{{ $t("head_footer.appointment") }}</div>
+    <div class="middle" @click="goAppointment()">
+      {{ $t("head_footer.appointment") }}
+    </div>
     <div class="right">
       <a href="tel:#">{{ $t("head_footer.phone") }}</a>
     </div>
@@ -11,7 +13,11 @@
 <script>
 export default {
   name: "floorFooter",
-  methods: {},
+  methods: {
+    goAppointment() {
+      this.$router.push("/appointment");
+    },
+  },
 };
 </script>
 
