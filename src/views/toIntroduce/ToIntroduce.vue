@@ -34,7 +34,7 @@
         </div>
         <button class="submit">确定介绍</button>
         <div class="agree">
-          <input type="checkbox" id="agree"/>
+          <input type="checkbox" id="agree" />
           <label for="agree">允许平台经纪致电联系</label>
         </div>
       </div>
@@ -79,27 +79,27 @@ export default {
     display: none;
   }
   .content {
-    padding: 0.1rem;
+    padding: 10px;
     h2 {
-      font-size: 0.24rem;
+      font-size: 24px;
       text-align: center;
-      padding-top: 0.5rem;
-      margin-bottom: 0.3rem;
+      padding-top: 50px;
+      margin-bottom: 30px;
       font-weight: normal;
     }
     .form {
-      padding: 0 0.2rem;
+      padding: 0 20px;
       .form_con {
-        margin-bottom: 0.2rem;
+        margin-bottom: 20px;
         span {
-          font-size: 0.2rem;
+          font-size: 20px;
         }
         input {
-          width: 2rem;
-          height: 0.3rem;
-          font-size: 0.14rem;
+          width: 200px;
+          height: 30px;
+          font-size: 14px;
           border: 1px solid #bbb;
-          padding: 0 0.1rem;
+          padding: 0 10px;
         }
         /deep/.van-dropdown-menu__bar {
           box-shadow: none;
@@ -109,19 +109,22 @@ export default {
       .option {
         text-align: center;
         select {
-          width: 2.24rem;
-          height: 0.3rem;
-          font-size: 0.14rem;
+          width: 224px;
+          height: 30px;
+          font-size: 14px;
           border: 1px solid #bbb;
           outline: none;
-          border-radius: 0.05rem;
+          border-radius: 5px;
+          option {
+            width: 100%;
+          }
         }
       }
       .submit {
-        width: 3.15rem;
-        height: 0.44rem;
-        line-height: 0.44rem;
-        border-radius: 0.04rem;
+        width: 315px;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 4px;
         background-color: #e61713;
         color: #fff;
         font-size: 16px;
@@ -129,17 +132,20 @@ export default {
         border: none;
         margin: 0 auto;
         display: block;
-        margin-top: 0.3rem;
-        margin-bottom: 0.2rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
       }
       .agree {
-        padding-left: 0.2rem;
+        padding-left: 20px;
         input {
           vertical-align: middle;
+          width: 13px;
+          height: 13px;
         }
         label {
-          font-size: 0.15rem;
-          margin-left: 0.1rem;
+          font-size: 15px;
+          margin-left: 10px;
+          vertical-align: middle;
         }
       }
     }

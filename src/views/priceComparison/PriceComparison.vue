@@ -60,12 +60,12 @@ export default {
     display: none;
   }
   .content {
-    padding: 0.1rem;
+    padding: 10px;
     h2 {
-      font-size: 0.24rem;
+      font-size: 24px;
       text-align: center;
-      padding-top: 0.5rem;
-      margin-bottom: 0.3rem;
+      padding-top: 50px;
+      margin-bottom: 30px;
     }
     .flex {
       display: flex;
@@ -73,17 +73,20 @@ export default {
       flex-wrap: wrap;
 
       .title {
-        margin-right: 0.2rem;
+        margin-right: 20px;
 
         div {
-          margin-top: 0.15rem;
+          margin-top: 15px;
         }
       }
       .house {
-        margin-right: 0.2rem;
-
+        margin-right: 20px;
+        img {
+          width: 100px;
+          height: 100px;
+        }
         div {
-          margin-top: 0.15rem;
+          margin-top: 15px;
         }
       }
     }

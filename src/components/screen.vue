@@ -205,7 +205,8 @@ export default {
 .filterbar {
   width: 100%;
   background-color: #fff;
-  height: 0.54rem;
+  height: 54px;
+  font-size: 14px;
 
   /deep/.van-dropdown-item__content {
     max-height: 100%;
@@ -213,13 +214,13 @@ export default {
 
   .filterbar-title {
     width: 100%;
-    height: 0.54rem;
+    height: 54px;
     .title-ul {
       border-bottom: 1px solid #eee;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      line-height: 0.54rem;
+      line-height: 54px;
 
       .current {
         span {
@@ -230,23 +231,23 @@ export default {
     ul .title-li {
       width: 24%;
       text-align: center;
-      font-size: 0.9em;
+      font-size: 9px;
 
       .filterbar-content {
         position: absolute;
         left: 0;
         width: 100%;
-        padding: 0.5em;
+        padding: 5px;
         background-color: #fff;
         z-index: 2;
-        top: 0.54rem;
+        top: 54px;
       }
       .content-ul li {
         text-align: left;
         color: #111;
         font-weight: 400;
-        padding-left: 1.5em;
-        padding-top: 0.7em;
+        padding-left: 15px;
+        padding-top: 7px;
       }
       .content-ul .current {
         color: #1989fa;
@@ -254,7 +255,7 @@ export default {
     }
     .content-ul .van-icon {
       float: right;
-      margin-right: 2.5em;
+      margin-right: 25px;
     }
     ul .van-icon {
       vertical-align: middle;
@@ -274,22 +275,22 @@ export default {
 }
 
 .button-div {
-  padding: 0.1rem;
+  padding: 1px;
   display: flex;
   justify-content: space-between;
   .reset {
     width: 40%;
-    border-radius: 0.08rem;
+    border-radius: 8px;
   }
   .determine {
     width: 57%;
-    border-radius: 0.08rem;
+    border-radius: 8px;
   }
 }
 .money {
   display: flex;
   justify-content: space-between;
-  padding: 0.1rem;
+  padding: 10px;
   /* 喜欢的颜色 */
   .radio-label,
   .radio-check {
@@ -298,14 +299,14 @@ export default {
   }
   .radio-label input {
     opacity: 0;
-    width: 1px;
-    height: 1px;
+    width: 10px;
+    height: 10px;
   }
   .radio-label label {
     display: inline-block;
-    min-width: 0.5rem;
-    height: 0.24rem;
-    line-height: 0.24rem;
+    min-width: 50px;
+    height: 24px;
+    line-height: 24px;
     text-align: center;
     border-radius: 5px;
     color: #111;
@@ -314,14 +315,14 @@ export default {
   }
   .radio-label input:checked {
     opacity: 0;
-    width: 1px;
-    height: 1px;
+    width: 10px;
+    height: 10px;
   }
   .radio-label input:checked + label {
     color: #fff;
     background-color: #1989fa;
   }
-  .iconq {
+  .icon {
     font-size: 25px;
     position: absolute;
     right: -11px;
@@ -333,10 +334,11 @@ export default {
 .height {
   @extend .money;
   input[type="number"] {
-    width: 1.5rem;
-    height: 0.3rem;
-    line-height: 0.24rem;
-    padding: 0 0.1rem;
+    width: 150px;
+    height: 30px;
+    line-height: 24px;
+    padding: 0 10px;
+    font-size: 14px;
   }
 }
 .menu {
@@ -345,10 +347,10 @@ export default {
   padding-bottom: 0;
 
   .radio-label label {
-    min-width: 1rem;
-    height: 0.3rem;
-    line-height: 0.3rem;
-    margin-bottom: 0.2rem;
+    min-width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
   }
 }
 .house {
@@ -357,28 +359,28 @@ export default {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 0.1rem;
+    margin-top: 10px;
 
     .radio-label label {
-      min-width: 0.8rem;
-      height: 0.3rem;
-      line-height: 0.3rem;
+      min-width: 80px;
+      height: 30px;
+      line-height: 30px;
     }
   }
 
   .room {
     width: 100%;
-    margin-bottom: 0.2rem;
+    margin-bottom: 20px;
     .number {
       width: 100%;
       .slider {
-        padding: 0.2rem;
+        padding: 20px;
         width: 100%;
       }
       .num {
         display: flex;
         justify-content: space-between;
-        padding: 0 0.2rem;
+        padding: 0 20px;
       }
     }
   }

@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <div class="left">{{ $t("head_footer.online") }}</div>
+    <div class="left" @click="goChat()">{{ $t("head_footer.online") }}</div>
     <div class="middle" @click="goAppointment()">
       {{ $t("head_footer.appointment") }}
     </div>
@@ -17,6 +17,9 @@ export default {
     goAppointment() {
       this.$router.push("/appointment");
     },
+    goChat() {
+      this.$router.push("/chat");
+    },
   },
 };
 </script>
@@ -30,25 +33,25 @@ export default {
   justify-content: space-between;
   bottom: 0;
   align-items: flex-end;
-  padding: 0.2rem;
+  padding: 20px;
   background-color: #fff;
 
   .left {
-    width: 1.23rem;
-    height: 0.5rem;
-    line-height: 0.5rem;
-    border-radius: 0.04rem;
+    width: 123px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
     background-color: #39c48b;
     color: rgba(255, 255, 255, 100);
-    font-size: 0.16rem;
+    font-size: 16px;
     text-align: center;
     border: 1px solid rgba(187, 187, 187, 100);
   }
   .middle {
     @extend .left;
-    width: 0.57rem;
-    height: 0.6rem;
-    line-height: 0.6rem;
+    width: 57px;
+    height: 60px;
+    line-height: 60px;
     background-color: #df4848;
   }
   .right {

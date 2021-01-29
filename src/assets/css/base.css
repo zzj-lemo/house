@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 body {
@@ -55,7 +56,7 @@ a {
   float: right;
 }
 
-html {
+/* html {
     font-size: calc(100vw / 3.9);
     @media screen and (min-width: 320px) {
       font-size: 64px;
@@ -71,4 +72,4 @@ html {
   
   #app {
     font-size: initial;
-  }
+  } */

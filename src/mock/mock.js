@@ -131,11 +131,11 @@ const getPriceComparison = () => {
   let resources = [];
   for (let i = 0; i < 2; i++) {
     resources.push({
-      image: Random.dataImage("100x100","户型图"),
+      image: Random.dataImage("100x100", "户型图"),
       "houseType|1": ["A户型", "C户型"],
       type: "住宅",
       "price|1": ["约260万/套", "约660万/套"],
-      "area|1": ["100㎡","150㎡"],
+      "area|1": ["100㎡", "150㎡"],
       direction: "南，北",
       address: "北京。。。",
     });
@@ -143,3 +143,17 @@ const getPriceComparison = () => {
   return resources;
 };
 Mock.mock("http://mockjs.com/getPriceComparison", "get", getPriceComparison());
+
+const getAgentList = () => {
+  let resources = [];
+  for (let i = 0; i < 10; i++) {
+    resources.push({
+      image: Random.dataImage("80x80", "头像"),
+      name: Random.cname(),
+      "service|1000-5000": 1,
+      "look|100-500": 1,
+    });
+  }
+  return resources;
+};
+Mock.mock("http://mockjs.com/getAgentList", "get", getAgentList());

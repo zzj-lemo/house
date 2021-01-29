@@ -15,7 +15,7 @@
       <div class="time">
         地址<span>{{ floorDetail.address }}</span>
       </div>
-      <van-icon name="location" color="#F20505" size="0.3rem" />
+      <van-icon name="location" color="#F20505" size="30px" />
     </div>
   </div>
 </template>
@@ -35,14 +35,14 @@ export default {
 <style lang="scss" scoped>
 .info {
   .time {
-    font-size: 0.18rem;
+    font-size: 18px;
     color: #9f9b9b;
-    margin-bottom: 0.1rem;
+    margin-bottom: 10px;
 
     span {
       color: #101010;
-      font-size: 0.16rem;
-      margin-left: 0.1rem;
+      font-size: 16px;
+      margin-left: 10px;
     }
   }
   .flex {

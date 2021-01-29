@@ -34,26 +34,31 @@ export default {
 .realShot {
   .list {
     display: flex;
-    margin-top: 0.2rem;
+    margin-top: 20px;
 
     .left {
-      margin-right: 0.1rem;
+      margin-right: 10px;
+      width: 100px;
+      height: 70px;
     }
     .content {
       .title {
-        font-size: .16rem;
-        margin-bottom: 0.1rem;
+        font-size: 16px;
+        margin-bottom: 10px;
       }
       .people {
         img {
           border-radius: 50%;
           vertical-align: middle;
-          margin-right: 0.1rem;
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
         }
 
         span {
-          font-size: .14rem;
+          font-size: 14px;
           color: #999;
+          vertical-align: middle;
         }
       }
     }

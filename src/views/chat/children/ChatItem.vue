@@ -1,0 +1,88 @@
+<template>
+  <div class="record-wrapper">
+    <div class="time"></div>
+    <div v-if="from == 1" class="msg msg-right">
+      <div class="img-wrapper">
+        <img class="img" :src="from1" />
+      </div>
+      <div class="message-wrapper message-wrapper-right">
+        <div class="message">{{ message }}</div>
+      </div>
+    </div>
+
+    <div v-else class="msg msg-left">
+      <div class="img-wrapper">
+        <img class="img" :src="from2" />
+      </div>
+      <div class="message-wrapper message-wrapper-left">
+        <div class="message">{{ message }}</div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Chat",
+  props: {
+    from: Number, 
+    message: String,
+    timestamp: Date,
+  },
+  data() {
+    return {
+        from1: require("../../../assets/img/Facebook.png"),
+        from2: require("../../../assets/img/friend.png"),
+    };
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.record-wrapper {
+  margin: 4px;
+  padding: 4px;
+  // font-size: 14px;
+}
+.time {
+  text-align: center;
+}
+.msg {
+  display: flex;
+  flex-direction: row;
+
+  .message-wrapper {
+    max-width: 220px;
+
+    margin: 0px 10px 0px 10px;
+
+    .message {
+      margin: 10px;
+      word-wrap: break-word; //英文换行
+    }
+  }
+
+  .message-wrapper-left {
+    background-color: #ECF0EA;
+    border-radius: 0px 12px 12px 12px;
+  }
+
+  .message-wrapper-right {
+    background-color: #8DFA69;
+    border-radius: 12px 0px 12px 12px;
+  }
+
+  .img {
+    flex: auto;
+    height: 36px;
+    width: 36px;
+    border-radius: 8px;
+  }
+}
+.msg-right {
+  flex-direction: row-reverse;
+}
+.msg-left {
+  flex-direction: row;
+}
+</style>

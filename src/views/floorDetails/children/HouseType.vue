@@ -30,28 +30,28 @@ export default {
 .house_type {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.2rem;
+  margin-bottom: 20px;
 
   .list {
     width: 48%;
     img {
       width: 100%;
-      margin-bottom: 0.1rem;
+      margin-bottom: 10px;
     }
     div {
-      margin-bottom: 0.1rem;
-      font-size: 0.14rem;
+      margin-bottom: 10px;
+      font-size: 14px;
     }
     .area {
-      font-size: 0.16rem;
+      font-size: 16px;
       font-weight: bold;
     }
     .state {
-      font-size: 0.12rem;
+      font-size: 12px;
       color: #fff;
       background-color: #4b63bf;
       display: inline;
-      padding: 0.02rem 0.05rem;
+      padding: 2px 5px;
     }
   }
 }

@@ -8,15 +8,15 @@
 </template>
 <script>
 // import Screen from "../../components/screen.vue";
-import List from '../../components/list.vue';
+import List from "../../components/list.vue";
 import { getfloorSwiper } from "../../network/home";
 
 export default {
   name: "FloorList",
   data() {
     return {
-        floorList: [],
-        value:"",
+      floorList: [],
+      value: "",
     };
   },
   components: {
@@ -38,10 +38,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .floorList {
-    padding: 0.1rem;
-    // padding-top: 0.64rem;
-    .list{
-        margin-bottom: 0.1rem;
-    }
+  padding: 10px;
+  .list {
+    margin-bottom: 10px;
+  }
 }
 </style>

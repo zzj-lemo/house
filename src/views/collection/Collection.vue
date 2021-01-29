@@ -48,7 +48,7 @@ export default {
 <style lang="scss" scoped>
 .collection {
   .list {
-    margin-bottom: 0.1rem;
+    margin-bottom: 10px;
     
     /deep/.address {
       display: none;
@@ -61,8 +61,8 @@ export default {
     /deep/.van-tab {
       border: 1px solid rgba(224, 227, 234, 100);
       background-color: #f3f6f9;
-      height: 0.4rem;
-      line-height: 0.4rem;
+      height: 40px;
+      line-height: 40px;
     }
     /deep/.van-tab--active {
       color: #3894ff;
@@ -70,7 +70,7 @@ export default {
     }
   }
   /deep/.van-tabs__content {
-    padding: 0.15rem 0.1rem;
+    padding: 15px 10px;
   }
 }
 </style>

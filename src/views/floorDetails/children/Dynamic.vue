@@ -26,17 +26,17 @@ export default {
 <style lang="scss" scoped>
 .dynamic {
   .list {
-    padding: 0.15rem 0;
+    padding: 15px 0;
     border-bottom: 1px solid #eee;
     .article {
-      font-size: 0.16rem;
+      font-size: 16px;
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
       line-height: 1.5;
-      margin-bottom: 0.1rem;
+      margin-bottom: 10px;
     }
     .flex {
       display: flex;
@@ -44,13 +44,13 @@ export default {
       align-items: center;
 
       .state {
-        font-size: 0.12rem;
+        font-size: 12px;
         color: #e5a674;
         background-color: #fbf6e0;
-        padding: 0.02rem;
+        padding: 2px;
       }
       .time {
-        font-size: 0.12rem;
+        font-size: 12px;
         color: #aaa;
       }
     }
@@ -63,13 +63,13 @@ export default {
   }
   .subscribe {
     width: 100%;
-    height: 0.5rem;
-    line-height: 0.5rem;
+    height: 50px;
+    line-height: 50px;
     color: #577dd9;
     background-color: #f4f7ff;
-    font-size: 0.16rem;
+    font-size: 16px;
     text-align: center;
-    border-radius: .05rem;
+    border-radius: 5px;
   }
 }
 </style>

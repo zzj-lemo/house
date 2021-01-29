@@ -27,7 +27,7 @@
       <div class="title">
         <h3>楼盘动态</h3>
       </div>
-      <!-- <dynamic :floorDynamic="floorDynamic"></dynamic> -->
+      <dynamic :floorDynamic="floorDynamic"></dynamic>
       <div class="title">
         <h3>周边配套</h3>
       </div>
@@ -131,42 +131,46 @@ export default {
 </style>
 <style lang="scss" scoped>
 .floorDetail {
-  padding-bottom: 1rem;
-
+  padding-bottom: 10px;
+  .van-swipe-item {
+    img {
+      width: 100%;
+    }
+  }
   .content {
-    padding: 0.2rem;
+    padding: 20px;
 
     .name {
-      font-size: 0.3rem;
+      font-size: 30px;
     }
     .price {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 0.2rem;
+      margin-top: 20px;
 
       .left {
-        font-size: 0.28rem;
+        font-size: 28px;
         color: #f20505;
       }
       .right {
         .contrast {
-          width: 0.5rem;
-          height: 0.36rem;
-          line-height: 0.36rem;
-          border-radius: 0.04rem;
-          font-size: 0.14rem;
+          width: 50px;
+          height: 36px;
+          line-height: 36px;
+          border-radius: 4px;
+          font-size: 14px;
           text-align: center;
           border: 1px solid rgba(187, 187, 187, 100);
           display: inline-block;
-          margin-right: 0.1rem;
+          margin-right: 10px;
         }
         .forward {
           @extend .contrast;
-          font-size: 0.24rem;
-          width: 0.48rem;
-          height: 0.48rem;
-          line-height: 0.48rem;
+          font-size: 24px;
+          width: 48px;
+          height: 48px;
+          line-height: 48px;
           border-radius: 50%;
           margin-right: 0;
           transform: rotate(30deg);
@@ -177,13 +181,13 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 0.1rem;
-      margin-bottom: 0.1rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
       h3 {
-        font-size: 0.24rem;
+        font-size: 24px;
       }
       .more {
-        font-size: 0.14rem;
+        font-size: 14px;
       }
     }
   }

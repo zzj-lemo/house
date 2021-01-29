@@ -50,12 +50,12 @@ export default {
     display: none;
   }
   .content {
-    padding: 0.1rem;
+    padding: 10px;
     h2 {
-      font-size: 0.24rem;
+      font-size: 24px;
       text-align: center;
-      padding-top: 0.5rem;
-      margin-bottom: 0.3rem;
+      padding-top: 50px;
+      margin-bottom: 30px;
     }
     .flex {
       display: flex;
@@ -68,37 +68,37 @@ export default {
         justify-content: center;
         align-items: center;
         width: 25%;
-        margin-bottom: 0.2rem;
+        margin-bottom: 20px;
         img {
-          width: 0.48rem;
-          height: 0.48rem;
+          width: 48px;
+          height: 48px;
         }
         span {
-          margin-top: 0.06rem;
-          font-size: 0.14rem;
+          margin-top: 6px;
+          font-size: 14px;
         }
       }
     }
     .button {
       width: 100%;
-      height: 0.44rem;
-      line-height: 0.44rem;
-      font-size: 0.14rem;
+      height: 44px;
+      line-height: 44px;
+      font-size: 14px;
       text-align: center;
       border: 1px solid #bbb;
 
       span {
-        width: .38rem;
-        height: .38rem;
-        line-height: .38rem;
-        font-size: .24rem;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 24px;
         text-align: center;
         border: 1px solid #bbb;
         border-radius: 50%;
         display: inline-block;
         vertical-align: middle;
         transform: rotate(30deg);
-        margin-right: 0.1rem;
+        margin-right: 10px;
       }
     }
   }

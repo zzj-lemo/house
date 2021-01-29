@@ -29,7 +29,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .06rem;
+    padding: 6px;
     flex-wrap: wrap;
 
     .content{
@@ -41,12 +41,17 @@ export default {
       justify-content: center;
       align-items: center;
       text-align: center;
-      margin-bottom: 0.02rem;
-      padding: .06rem;
+      margin-bottom: 2px;
+      padding: 6px;
 
       .title {
-        font-size: .14rem;
-        margin-top: .04rem;
+        font-size: 14px;
+        margin-top: 4px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
       }
     }
   }

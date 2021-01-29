@@ -34,16 +34,16 @@ export default {
   display: flex;
   z-index: 2;
   justify-content: space-between;
-  padding: 0.1rem;
+  padding: 10px;
   background-color: #fff;
 
   .return {
-    width: 0.6rem;
-    height: 0.3rem;
-    line-height: 0.3rem;
-    border-radius: 0.06rem;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 06px;
     color: #111;
-    font-size: 0.14rem;
+    font-size: 14px;
     text-align: center;
     border: 1px solid rgba(187, 187, 187, 100);
   }
@@ -53,7 +53,7 @@ export default {
       display: inline-block;
     }
     .collection {
-      margin-right: 0.1rem;
+      margin-right: 10px;
     }
   }
 }

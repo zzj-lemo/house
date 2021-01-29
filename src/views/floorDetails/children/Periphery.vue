@@ -79,7 +79,7 @@ export default {
 <style lang="scss" scoped>
 .vue-map-container {
     width: 100%;
-    height: 2.3rem;
+    height: 230px;
 }
 </style>
  

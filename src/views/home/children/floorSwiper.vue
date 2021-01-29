@@ -31,11 +31,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .floorList {
-  padding: 0.08rem;
+  padding: 8px;
   h2 {
     color: #f20505;
-    font-size: 0.24rem;
-    margin-bottom: 0.1rem;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 }
   .van-swipe__indicator {
@@ -45,7 +45,7 @@ export default {
     background-color: #333;
   }
   .van-swipe-item {
-    padding-bottom: 0.15rem;
+    padding-bottom: 15px;
 }
 </style>
 

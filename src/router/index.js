@@ -16,6 +16,9 @@ const Share = () => import(/* webpackChunkName: "Share" */ "../views/share/share
 const PriceComparison = () => import(/* webpackChunkName: "PriceComparison" */ "../views/priceComparison/PriceComparison.vue");
 const ToIntroduce = () => import(/* webpackChunkName: "ToIntroduce" */ "../views/toIntroduce/ToIntroduce.vue");
 const Appointment = () => import(/* webpackChunkName: "Appointment" */ "../views/appointment/Appointment.vue");
+const SellingHouses = () => import(/* webpackChunkName: "SellingHouses" */ "../views/sellingHouses/SellingHouses.vue");
+const Agent = () => import(/* webpackChunkName: "Agent" */ "../views/agent/Agent.vue");
+const Chat = () => import(/* webpackChunkName: "Chat" */ "../views/chat/Chat.vue");
 
 const routes = [
   {
@@ -79,6 +82,18 @@ const routes = [
   {
     path: "/appointment",
     component: Appointment,
+  },
+  {
+    path: "/sellingHouses",
+    component: SellingHouses,
+  },
+  {
+    path: "/agent",
+    component: Agent,
+  },
+  {
+    path: "/chat",
+    component: Chat,
   },
 ]
 

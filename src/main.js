@@ -3,6 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import VueI18n from "vue-i18n";
+import LemonIMUI from 'lemon-imui';
+import 'lemon-imui/dist/index.css';
+import 'amfe-flexible/index.js'
 import {
   Button,
   Icon,
@@ -48,7 +51,8 @@ Vue.use(VueI18n)
   .use(Tab)
   .use(Tabs)
   .use(Calendar)
-  .use(Cell);
+  .use(Cell)
+  .use(LemonIMUI);
 
 const i18n = new VueI18n({
   locale: "chs", // 将要切换的语言，可以通过url拼的参数获取，用户行为select选择获取，本地manifest配置获取等，根据场景动态获取

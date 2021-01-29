@@ -32,29 +32,29 @@ export default {
   display: flex;
 
   img {
-    margin-right: 0.2rem;
-    width: 1.5rem;
-    height: 1rem;
+    margin-right: 20px;
+    width: 150px;
+    height: 100px;
   }
   .content {
     div {
-      margin-bottom: 0.1rem;
+      margin-bottom: 10px;
     }
 
     .name {
-      font-size: 0.2rem;
+      font-size: 20px;
       font-weight: bold;
       color: #111;
     }
     .price {
-        font-size: .18rem;
+        font-size: 18px;
         color: #FD5845;
     }
     .address {
-        font-size: .14rem;
+        font-size: 14px;
     }
     .time {
-      font-size: 0.12rem;
+      font-size: 12px;
       font-weight: bold;
       color: #111;
     }
