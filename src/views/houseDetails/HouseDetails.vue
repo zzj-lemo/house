@@ -1,6 +1,6 @@
 <template>
   <div class="houseDetails">
-    <floor-head></floor-head>
+    <floor-head :class="{ navActive: scrollFlag }"></floor-head>
     <img :src="houseDetail.image" alt="户型图" class="banner" />
     <div class="content">
       <h2 class="name">{{ houseDetail.name }}</h2>
@@ -36,6 +36,7 @@ export default {
   name: "HouseDetail",
   data() {
     return {
+      scrollFlag: true,
       houseDetail: {},
       list: [],
     };
@@ -48,6 +49,9 @@ export default {
   created() {
     this.getHouseDetails();
     this.getRealShot();
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
   },
   methods: {
     getHouseDetails() {
@@ -68,15 +72,37 @@ export default {
     goToIntroduce() {
       this.$router.push("/toIntroduce");
     },
+    handleScroll() {
+      let _this = this;
+      var scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      // console.log(scrollTop);
+      if (scrollTop < 200) {
+        _this.scrollFlag = true;
+      } else {
+        _this.scrollFlag = false;
+      }
+    },
   },
 };
 </script>
 
+
+<style lang="scss">
+.navActive {
+  background-color: transparent !important;
+  .return {
+    color: #fff !important;
+  }
+  .right span {
+    color: #fff !important;
+  }
+}
+</style>
 <style lang="scss" scoped>
 .houseDetails {
-  .head {
-    background-color: transparent;
-  }
   .banner {
     width: 100%;
   }

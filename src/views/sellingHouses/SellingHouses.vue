@@ -7,23 +7,15 @@
         <h2>信息录入</h2>
         <div class="form_con">
           <span>城市：</span>
-          <select>
-            <option>悉尼</option>
-            <option>堪培拉</option>
-            <option>多伦多</option>
-          </select>
+          <select-box :tableData="tableData1"></select-box>
         </div>
         <div class="form_con">
           <span>小区名称：</span>
-          <select>
-            <option>请选择</option>
-          </select>
+          <select-box :tableData="tableData2"></select-box>
         </div>
         <div class="form_con">
           <span>门牌号：</span>
-          <select>
-            <option>请选择</option>
-          </select>
+          <select-box :tableData="tableData3"></select-box>
         </div>
         <div class="form_con">
           <span>期望售价：</span>
@@ -46,11 +38,20 @@
 
 <script>
 import FloorHead from "../../components/head.vue";
+import SelectBox from "../../components/selectBox.vue";
 
 export default {
   name: "sellingHouses",
+  data() {
+    return {
+      tableData1: ["悉尼", "堪培拉", "多伦多"],
+      tableData2: ["请选择"],
+      tableData3: ["请选择"],
+    };
+  },
   components: {
     FloorHead,
+    SelectBox,
   },
 };
 </script>
@@ -58,49 +59,42 @@ export default {
 <style lang="scss" scoped>
 .sellingHouses {
   .content {
-    padding: 0.1rem;
+    padding: 10px;
 
     h2 {
-      font-size: 0.24rem;
-      padding-top: 0.5rem;
-      margin-bottom: 0.3rem;
+      font-size: 24px;
+      padding-top: 50px;
+      margin-bottom: 30px;
     }
     .form {
-      padding: 0 0.2rem;
+      padding: 0 20px;
       .form_con {
-        margin-bottom: 0.2rem;
+        display: flex;
+        margin-bottom: 20px;
         span {
-          font-size: 0.2rem;
+          font-size: 20px;
           width: 35%;
           display: inline-block;
         }
         input {
           width: 65%;
-          height: 0.3rem;
-          font-size: 0.14rem;
+          height: 30px;
+          font-size: 14px;
           border: 1px solid #bbb;
-          padding: 0 0.1rem;
+          padding: 0 10px;
         }
         /deep/.van-dropdown-menu__bar {
           box-shadow: none;
         }
-        select {
-          width: 65%;
-          height: 0.34rem;
-          font-size: 0.14rem;
-          border: 1px solid #bbb;
-          outline: none;
-          border-radius: 0.05rem;
-          padding: 0 0.05rem;
-        }
+        
       }
     }
 
     .submit {
       width: 100%;
-      height: 0.44rem;
-      line-height: 0.44rem;
-      border-radius: 0.04rem;
+      height: 44px;
+      line-height: 44px;
+      border-radius: 4px;
       background-color: #e61713;
       color: #fff;
       font-size: 16px;
@@ -108,8 +102,8 @@ export default {
       border: none;
       margin: 0 auto;
       display: block;
-      margin-top: 0.3rem;
-      margin-bottom: 0.2rem;
+      margin-top: 30px;
+      margin-bottom: 20px;
     }
   }
 }

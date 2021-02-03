@@ -4,33 +4,16 @@
     <div class="bottom">
       <div class="box">
         <div class="problem">你想住哪里</div>
-        <select>
-          <option>悉尼</option>
-          <option>堪培拉</option>
-          <option>多伦多</option>
-        </select>
+        <select-box :tableData="tableData1"></select-box>
       </div>
       <div class="flex">
         <div class="box">
           <div class="problem">你想住多大的房子</div>
-          <select>
-            <option>一室0厅</option>
-            <option>一室一厅</option>
-            <option>二室一厅</option>
-            <option>二室二厅</option>
-            <option>三室二厅</option>
-            <option>别墅</option>
-            <option>独栋</option>
-          </select>
+          <select-box :tableData="tableData2"></select-box>
         </div>
         <div class="box">
           <div class="problem">你的预算是多少</div>
-          <select>
-            <option>10-50万</option>
-            <option>51-100万</option>
-            <option>101-300万</option>
-            <option>300万+</option>
-          </select>
+          <select-box :tableData="tableData3"></select-box>
         </div>
       </div>
       <div class="agree">
@@ -42,14 +25,26 @@
 </template>
 
 <script>
+import SelectBox from "../../../components/selectBox.vue";
 export default {
   name: "HouseSelection",
+  data() {
+    return {
+      tableData1: ["悉尼", "堪培拉", "多伦多"],
+      tableData2: ["一室0厅", "一室一厅", "二室一厅", "二室二厅", "三室二厅", "别墅", "独栋"],
+      tableData3: ["10-50万", "51-100万", "101-300万", "300万+"],
+    };
+  },
+  components: {
+    SelectBox,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .houseSelection {
   border: 1px solid #ccc;
+
   .title {
     width: 100%;
     height: 45px;
@@ -57,21 +52,15 @@ export default {
     font-size: 24px;
     line-height: 45px;
     padding: 0 20px;
+    color: #fff;
   }
   .bottom {
     padding: 10px;
 
     .box {
       padding: 10px 0;
-      select {
-        width: 150px;
-        height: 34px;
-        font-size: 14px;
-        border: 1px solid #bbb;
-        outline: none;
-        border-radius: 5px;
-        padding: 0 5px;
-        margin-top: 5px;
+      .problem {
+        margin-bottom: 5px;
       }
     }
     .flex {
@@ -82,6 +71,8 @@ export default {
       padding-left: 20px;
       input {
         vertical-align: middle;
+        width: 13px;
+        height: 13px;
       }
       label {
         font-size: 15px;

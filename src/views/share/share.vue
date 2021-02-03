@@ -9,7 +9,7 @@
           <span>{{ item.text }}</span>
         </div>
       </div>
-      <div class="button">
+      <div class="button" @click="goToIntroduce()">
         <span>转</span>
         我要转介绍
       </div>
@@ -40,7 +40,11 @@ export default {
     FloorHead,
   },
   created() {},
-  methods: {},
+  methods: {
+    goToIntroduce() {
+      this.$router.push("/toIntroduce");
+    },
+  },
 };
 </script>
 

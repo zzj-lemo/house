@@ -15,7 +15,7 @@
       <div class="time">
         地址<span>{{ floorDetail.address }}</span>
       </div>
-      <van-icon name="location" color="#F20505" size="30px" />
+      <van-icon name="location" color="#F20505" />
     </div>
   </div>
 </template>
@@ -48,6 +48,10 @@ export default {
   .flex {
     display: flex;
     justify-content: space-between;
+
+    .van-icon-location::before {
+      font-size: 30px;
+    }
   }
 }
 </style>

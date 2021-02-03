@@ -4,10 +4,12 @@
       <img :src="item.image" />
       <div class="middle">
         <div class="name">{{ item.name }}</div>
-        <div class="people">{{ "服务"+item.service+"人 • 带看"+item.look+"人" }}</div>
+        <div class="people">
+          {{ "服务" + item.service + "人 • 带看" + item.look + "人" }}
+        </div>
       </div>
-      <div class="right">
-          <van-icon name="chat" size="30px" color="#1989fa" />
+      <div class="right" @click="goChat()">
+        <van-icon name="chat" color="#1989fa" />
       </div>
     </div>
   </div>
@@ -26,6 +28,9 @@ export default {
     goList() {
       this.$router.push("/floorDetails");
     },
+    goChat() {
+      this.$router.push("/chat");
+    },
   },
 };
 </script>
@@ -43,7 +48,7 @@ export default {
     height: 100px;
   }
   .middle {
-      width: 60%;
+    width: 60%;
     div {
       margin-bottom: 10px;
     }
@@ -57,13 +62,17 @@ export default {
     }
   }
   .right {
-      width: 50px;
-      height: 50px;
-      background-color: #F4F8FE;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f4f8fe;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .van-icon-chat::before {
+      font-size: 30px;
+    }
   }
 }
 </style>

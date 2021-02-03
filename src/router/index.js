@@ -12,7 +12,7 @@ const My = () => import(/* webpackChunkName: "My" */ "../views/my/My.vue");
 const FloorList = () => import(/* webpackChunkName: "floorList" */ "../views/floorList/FloorList.vue");
 const FloorDetails = () => import(/* webpackChunkName: "floorDetails" */ "../views/floorDetails/FloorDetails.vue");
 const HouseDetails = () => import(/* webpackChunkName: "HouseDetails" */ "../views/houseDetails/HouseDetails.vue");
-const Share = () => import(/* webpackChunkName: "Share" */ "../views/share/share.vue");
+const Share = () => import(/* webpackChunkName: "Share" */ "../views/share/Share.vue");
 const PriceComparison = () => import(/* webpackChunkName: "PriceComparison" */ "../views/priceComparison/PriceComparison.vue");
 const ToIntroduce = () => import(/* webpackChunkName: "ToIntroduce" */ "../views/toIntroduce/ToIntroduce.vue");
 const Appointment = () => import(/* webpackChunkName: "Appointment" */ "../views/appointment/Appointment.vue");

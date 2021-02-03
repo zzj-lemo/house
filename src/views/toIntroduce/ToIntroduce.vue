@@ -26,11 +26,7 @@
           <screen></screen>
         </div>
         <div class="option">
-          <select>
-            <option>楼盘清单</option>
-            <option>航城壶号</option>
-            <option>华樾国际</option>
-          </select>
+          <select-box :tableData="tableData"></select-box>
         </div>
         <button class="submit">确定介绍</button>
         <div class="agree">
@@ -45,6 +41,7 @@
 <script>
 import FloorHead from "../../components/head.vue";
 import Screen from "../../components/screen.vue";
+import SelectBox from "../../components/selectBox.vue";
 
 export default {
   name: "ToIntroduce",
@@ -53,11 +50,13 @@ export default {
       ToIntroduce: [],
       date: "",
       show: false,
+      tableData: ["楼盘清单", "航城壶号", "华樾国际"],
     };
   },
   components: {
     FloorHead,
     Screen,
+    SelectBox,
   },
   created() {},
   methods: {
@@ -107,18 +106,8 @@ export default {
       }
 
       .option {
-        text-align: center;
-        select {
-          width: 224px;
-          height: 30px;
-          font-size: 14px;
-          border: 1px solid #bbb;
-          outline: none;
-          border-radius: 5px;
-          option {
-            width: 100%;
-          }
-        }
+        display: flex;
+        justify-content: center;
       }
       .submit {
         width: 315px;
